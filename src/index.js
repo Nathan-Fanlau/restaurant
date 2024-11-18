@@ -2,6 +2,7 @@ import "./style.css";
 
 import { createHomePage } from "./home";
 import { createAboutPage } from "./about";
+import { createMenuPage } from "./menu";
 
 const content = document.querySelector("#content");
 const buttons = document.querySelectorAll("button");
@@ -14,7 +15,7 @@ buttons.forEach((button) => {
             content.replaceChildren(createHomePage());
         }
         else if(e.target.id == "menu"){
-            content.replaceChildren(createHomePage());
+            content.replaceChildren(createMenuPage());
         }
         else if(e.target.id == "about"){
             content.replaceChildren(createAboutPage());

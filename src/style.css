@@ -179,4 +179,48 @@ h6 {
       font-size: 1.2rem;
     }
   }
+
+  .menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 60rem;
+    margin-top: 4rem;
+
+    h1 {
+      font-size: 3.2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .square-section {
+      padding: 2rem 7.2rem;
+      display: flex;
+      gap: 2rem;
+  
+      .square-div {
+        height: 16rem;
+        width: 16rem;
+        padding: 2rem;
+        box-shadow: 0 0.5rem 0.7rem rgb(206, 206, 206);
+  
+        .square-img {
+          height: 4rem;
+        }
+  
+        .square-text {
+          height: 12rem;
+  
+          h2 {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  
 }
