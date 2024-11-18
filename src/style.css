@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "robotolight";
+  src: url("./fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: robotoregular, Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 4rem;
+  box-shadow: 0 0 1rem rgb(206, 206, 206);
+
+  button {
+    border: 0;
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    background-color: transparent;
+  }
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+
+  .landing {
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0.2rem 0.5rem rgb(206, 206, 206);
+
+    .landing-wrapper {
+      padding: 2rem 7.2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      
+      .landing-text {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h1 {
+          font-size: 3.2rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+        button {
+          width: 12rem;
+          height: 3.6rem;
+          background-color: rgb(255, 145, 0);
+          border-radius: 0.2rem;
+          border: 0;
+          font-weight: bold;
+          color: white;
+        }
+      }
+
+      .landing-pic {
+        display: flex;
+        justify-content: center;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .square-section {
+    padding: 2rem 7.2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .square-div {
+      height: 16rem;
+      width: 16rem;
+      padding: 2rem;
+      box-shadow: 0 0.5rem 0.7rem rgb(206, 206, 206);
+
+      .square-img {
+        height: 4rem;
+      }
+
+      .square-text {
+        height: 12rem;
+
+        h2 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .about-wrapper {
+    height: 80svh;
+    width: 60svw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    h1 {
+      font-size: 3.2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}

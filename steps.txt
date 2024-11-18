@@ -1,0 +1,44 @@
+== SETUP ==
+git init
+Initialize git in folder
+
+npm init
+Initialize npm package.json
+
+npm install --save-dev webpack webpack-cli
+Install webpack
+
+npm install --save-dev html-webpack-plugin style-loader css-loader html-loader
+Install needed plugin and modules for HTML and CSS 
+
+npm install --save-dev webpack-dev-server
+Allows live reloading and serves project locally without needing a full build.
+
+webpack.config.js
+Make webpack configuration file
+
+.gitignore
+Ignore "node_modules" and "dist"
+
+
+== CODE DEVELOPMENT ==
+Make src folder, content:
+- index.js
+- styles.css
+- index.html
+
+Make sure .html and .js file path at webpack.config.js is correct
+
+npx webpack serve
+Hosts project on http://localhost:8080/
+Watch for changes in source files (src) and updates the webpage automatically
+Doesn't generate output files in the dist folder; 
+instead, serves everything from memory.
+When to Use: For local development.
+
+Make design in HTML first, then 
+Make element generated through JS with DOM
+
+npx webpack
+Runs Webpack to bundle your source code into output files typically dist folder
+for production or distribution.
